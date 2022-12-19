@@ -1,0 +1,10 @@
+table {
+    margin: 1rem;
+    margin-left: 3rem;
+
+    font-size: large;
+}
+
+td {
+    padding: .5rem;
+}
