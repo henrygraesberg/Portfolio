@@ -1,3 +1,13 @@
-#Experience {
+#experience {
     font-family: monospace;
+}
+
+#head {
+    text-align: center;
+}
+
+#head, #experience {
+    padding: 1rem;
+
+    margin: auto;
 }

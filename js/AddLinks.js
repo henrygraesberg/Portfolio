@@ -1,17 +1,12 @@
 const linkContainer = document.getElementById("link-container");
 
-const posthref = "../posts/";
+const posthref = "../blogs/";
 
 const posts = [
     {
         dateAdded: "19.12.22",
-        link: posthref + "PostOne.html",
+        link: posthref + "FirstPost.html",
         title: "Post One"
-    },
-    {
-        dateAdded: "19.12.22",
-        link: posthref + "PostTwo.html",
-        title: "Post Two"
     }
 ]
 
