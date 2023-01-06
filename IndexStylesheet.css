@@ -1,5 +1,6 @@
 :root {
     --dark-bg: rgba(15, 15, 15, 0.95);
+    --grey-bg: rgb(40, 40, 45);
     --spacing: 55px;
   
     font-family: monospace;
@@ -7,14 +8,27 @@
     font-style: normal;
 }
   
+body {
+    padding: 0;
+
+    background-color: var(--grey-bg);
+
+    max-width: 100%;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    overflow-x: hidden;
+}
   
+body::-webkit-scrollbar {
+    display: none;
+}
+
 main {
     width: 100vw;
-    max-width: 100%;
+    max-width: fit-content;
     color: white;
-    z-index: 99;
-    position: absolute;
-    width: 100%;
     margin: 0px 30px;
     padding: 120px 0px;
     
@@ -22,20 +36,69 @@ main {
     grid-template-columns: repeat(12, 1fr);
 }
   
-h1, h2, h3 {
+h1 {
+    font-size: 5rem;
+    margin: 0px .5rem;
+    text-align: center;
+}
+
+h1, h2, h3 {    
     font-weight: 700;
     font-style: normal;
+
+
 }
-  
+
+a, a:link, a:visited, a:active {
+    text-decoration: none;
+    color: white;
+
+    border-bottom: .5rem solid transparent;
+
+    transition: border-color 400ms ease-in;
+
+    margin: .5rem, .1rem;
+}
+
+a:hover {
+    border-color: rgb(136, 48, 164);
+}
+
 header {
     display: flex;
     align-items: center;
 
+    flex-wrap: wrap;
+
     background: var(--dark-bg);
-    grid-column: 3 / span 7;
+    grid-column: 3 / span 8;
     font-size: 2.5rem;
     padding: 2rem;
     margin-bottom: var(--spacing);
+}
+
+#HeaderDiv {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+#HeaderDiv > h1, #Links > h1 {
+    transition: opacity 400ms ease-in;
+}
+
+header:has(.HoverFocus:hover) h1:not(.HoverFocus:hover) {
+    opacity: 0.2;
+}
+
+#Links {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
 }
   
 section {
@@ -45,21 +108,27 @@ section {
     line-height: 1.5;
     margin-bottom: var(--spacing);
 
-    transition: width 1s;
+    transition: opacity 500ms, scale 500ms;
 }
-  
+
+main:has(section:hover) section:not(section:hover) {
+    opacity: .4;
+}
+
+section:hover {
+    scale: 105%;
+}
+
 .left {
-    grid-column: 1 / 6;
-    width: 0%;
+    grid-column: 1 / 7;
 }
 
 .right {
-    grid-column: 6 / 12;
-    width: 0%;
+    grid-column: 6 / 13;
 }
 
 .seperator {
-    grid-column: span 12;
+    grid-column: span 13;
 }
 
 .Experience > li {
