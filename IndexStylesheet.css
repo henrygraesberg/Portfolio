@@ -69,6 +69,7 @@ header {
     flex-wrap: wrap;
 
     background: var(--dark-bg);
+    min-width: fit-content;
     grid-column: 3 / span 8;
     font-size: 2.5rem;
     padding: 2rem;
