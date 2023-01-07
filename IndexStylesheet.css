@@ -90,6 +90,12 @@ header {
     width: 100%;
 }
 
+@media only screen and (orientation: portrait) {
+    #HeaderDiv {
+        justify-content: center;
+    }
+}
+
 #HeaderDiv > h1, #Links > h1 {
     transition: opacity 400ms ease-in;
 }
