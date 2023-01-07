@@ -12,6 +12,7 @@
   
 body {
     padding: 0;
+    margin: 0;
 
     background-color: var(--grey-bg);
 
@@ -57,6 +58,10 @@ img {
     transition: opacity var(--hover-transition-time) ease-in-out;
 }
 
+.HoverFocus {
+    margin: .7rem 1.5rem;
+}
+
 .HoverFocus > a, .HoverFocus > a:link, .HoverFocus > a:visited, .HoverFocus > a:active {
     text-decoration: none;
     color: white;
@@ -96,12 +101,6 @@ header {
     justify-content: space-between;
 
     width: 100%;
-}
-
-@media only screen and (orientation: portrait) {
-    #HeaderDiv {
-        justify-content: center;
-    }
 }
 
 #HeaderDiv > h1, #Links > h1 {
@@ -157,4 +156,10 @@ section:hover {
 
 .Experience > li {
     list-style-type: none;
+}
+
+@media only screen and (orientation: portrait) {
+    #HeaderDiv {
+        justify-content: center;
+    }
 }
