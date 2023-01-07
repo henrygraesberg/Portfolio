@@ -5,12 +5,45 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <title>Home</title>
+        <title>ToasterVan</title>
+
+        <script src="https://kit.fontawesome.com/39cedbd120.js" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="IndexStylesheet.css">
+        <link rel="stylesheet" href="navStylesheet.css">
     </head>
-    <body>
-        <main>
+    <body style="overflow: hidden">
+        <nav id="NavMenu">
+
+            <i class="fa-solid fa-bars-staggered fa-2xl" id="NavMenuOpen" onclick="ChangeNavMenu()" style="margin: 20px;"></i>
+
+            <div class="Content">
+                <h2 class="MenuLink"><a href="index.html">Home</a></h2>
+                <h2 class="MenuLink"><a href="experience.html">Experience</a></h2>
+
+                <div id="OutsideLinks">
+                    <div class="MenuLink" id="Github">
+                        <a href="https://www.github.com/ToasterVan" target="_blank">
+                            <i class="fab fa-github-square fa-2xl"></i>
+                        </a>
+                    </div>
+                    <div class="MenuLink" id="Twitter">
+                        <a href="https://www.twitter.com/_ToasterVan" target="_blank">
+                            <i class="fab fa-twitter fa-2xl"></i>
+                        </a>
+                    </div>
+                    <div class="MenuLink" id="Twitch">
+                        <a href="https://www.twitch.tv/ToasterVan" target="_blank">
+                            <i class="fa-brands fa-twitch fa-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <script src="navScript.js"></script>
+        </nav>
+
+        <main style="padding: 0;">
             <header>
                 <div id="HeaderDiv">
                     <img src="images/ToasterVan.png" alt="ToasterVan Avatar" style="height: 18rem;">
@@ -23,74 +56,6 @@
                     <h1 class="HoverFocus"><a href="https://twitter.com/_ToasterVan" target="_blank">Twitter</a></h1>
                 </div>
             </header>
-
-            <div style="grid-column: 4 / span 6; background: var(--dark-bg); margin-bottom: var(--spacing); padding: 2rem; min-width: fit-content;">
-                <h1>Programming Experience</h1>
-            </div>
-
-            <section class="left">
-                <h2>Programming Class <span style="font-size: large;">* 3 schoolyears(2017-2020) @ Ruseløkka Skole</span></h2>
-                <p><ul class="Experience">
-                <li>Experience gained in:</li>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Python</li>
-                        <li>Lego Mindstorms</li>
-                        <li>Scratch</li>
-                    </ul>
-                </ul></p>
-            </section>
-
-            <div class="seperator"></div>
-
-            <section class="right">
-                <h2>First Lego Leauge <span style="font-size: large;">* 2 seasons</span></h2>
-                <p><ul class="Experience">
-                    <li>Experience gained in:</li>
-                    <ul>
-                        <li>Lego Mindstorms</li>
-                        <li>And lots of teamwork :)</li>
-                    </ul>
-                    <li>Accomplishments:</li>
-                    <ul>
-                        <li>Oslo Champions (<b>2018</b> & <b>2019</b>)</li>
-                        <li>Scandinavia Technology Prize 1st place (<b>2018</b> & <b>2019</b>)</li>
-                        <li>Scandinavia Robot Competition 1st place (<b>2018</b> & <b>2019</b>)</li>
-                        <li><b>2018</b> Razorback Invitational Mechanical Design Award 1st place</li>
-                        <li><b>2019</b> Detroit World Festival Mechanical Design Award 2nd place</li>
-                    </ul>
-                    </ul></p>
-            </section>
-
-            <div class="seperator"></div>
-
-            <section class="left">
-                <h2>Game Development <span style="font-size: large;">* 1 summer intership(2022) @ Innova Interactive Studio</span></h2>
-                <p><ul class="Experience">
-                    <li>Experience gained in:</li>
-                    <ul>
-                        <li>Unity</li>
-                        <li>C#</li>
-                        <li>JSON</li>
-                    </ul>
-                    </ul></p>
-            </section>
-
-            <div class="seperator"></div>
-
-            <section class="right">
-                <h2>Information Technology <span style="font-size: large">* 1 schoolyear(22/23 semester - currently in progress) @ Blindern VGS</span></h2>
-                <p><ul class="Experience">
-                    <li>Experience gained in:</li>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                        <li>SQL</li>
-                    </ul>
-                    </ul></p>
-            </section>
         </main>
     </body>
 </html>

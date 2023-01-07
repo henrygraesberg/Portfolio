@@ -1,0 +1,82 @@
+:root {
+    --dark-bg-no-a: rgba(12, 12, 12);
+}
+
+.Content {
+    position: fixed;
+    background-color: var(--dark-bg-no-a);
+    top: 0;
+
+    padding-left: 1.5rem;
+    
+    transform: translate(var(--menuLeft));
+
+    width: 20vw;
+    min-width: fit-content;
+    max-width: 250px;
+    height: 100vh;
+    min-height: fit-content;
+
+    pointer-events: stroke;
+
+    z-index: 1;
+
+    transition: transform 450ms var(--easeDirection);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.MenuLink > a {
+    padding: 1rem;
+
+    transition: color 500ms ease-in-out;
+}
+
+.MenuLink > a:link {
+    text-decoration: none;
+
+    color: rgb(100, 60, 255);
+}
+
+.MenuLink > a:visited {
+    text-decoration: none;
+
+    color: rgb(100, 60, 255);
+}
+
+.MenuLink > a:hover {
+    text-decoration: none;
+
+    color: rgb(var(--purple));
+}
+
+.MenuLink > a:active {
+    text-decoration: none;
+
+    color: rgb(100, 60, 255);
+}
+
+#OutsideLinks {
+    display: flex;
+    flex-direction: row;
+}
+
+#NavMenuOpen {
+    position: fixed;
+
+    color: rgb(var(--purple));
+
+    transition: transform 300ms ease-out, color 250ms ease-in;
+
+    z-index: 99;
+}
+
+#NavMenuOpen:hover {
+    transform: scale(1.1);
+
+    color: rgb(255, 100, 20);
+
+    z-index: 99;
+}
