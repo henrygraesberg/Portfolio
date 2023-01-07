@@ -29,7 +29,6 @@ body::-webkit-scrollbar {
 
 main {
     width: 100vw;
-    height: 100vh;
     max-width: fit-content;
     color: white;
     margin: 0px 30px;
