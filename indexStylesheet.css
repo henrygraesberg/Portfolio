@@ -65,6 +65,10 @@ h1, h2, h3 {
     font-style: normal;
 }
 
+.smaller {
+    font-size: 3rem;
+}
+
 img {
     transition: opacity var(--hover-transition-time) ease-in-out;
 }
@@ -104,6 +108,10 @@ header {
     margin-bottom: var(--spacing);
 }
 
+header > div {
+    width: 100%;
+}
+
 #HeaderDiv {
     display: flex;
     flex-wrap: wrap;
@@ -114,7 +122,7 @@ header {
     width: 100%;
 }
 
-#HeaderDiv > h1, #Links > h1 {
+h1, .smaller {
     transition: opacity var(--hover-transition-time) ease-in-out;
 }
 
@@ -124,6 +132,13 @@ header:has(.HoverFocus:hover) h1:not(.HoverFocus:hover) {
 
 header:has(.HoverFocus:hover) img {
     opacity: 0.2;
+}
+
+#Skills {
+    display: flex;
+    justify-content: space-evenly;
+
+    flex-wrap: wrap;
 }
 
 #Links {
