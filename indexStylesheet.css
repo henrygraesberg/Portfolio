@@ -74,7 +74,7 @@ img {
 }
 
 .HoverFocus {
-    margin: .7rem 1.5rem;
+    margin: .7rem 2rem;
 }
 
 .HoverFocus > a, .HoverFocus > a:link, .HoverFocus > a:visited, .HoverFocus > a:active {
