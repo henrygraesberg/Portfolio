@@ -91,10 +91,13 @@ img {
         to right,
         rgb(var(--purple)),
         rgb(112, 80, 166),
-        rgb(79, 17, 92),
+        rgb(190, 101, 190),
         rgb(var(--purple))
     );
     background-size: 200%;
+
+    animation: BackgroundScrollAnim 3s linear infinite;
+    animation-play-state: paused;
 
     background-clip: text;
     -webkit-background-clip: text;
@@ -102,7 +105,7 @@ img {
 }
 
 .HoverFocus > a:hover {
-    animation: BackgroundScrollAnim 3s linear infinite;
+    animation-play-state: running;
 
     border-color: rgb(var(--purple));
 }
