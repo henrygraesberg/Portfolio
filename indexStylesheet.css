@@ -86,9 +86,24 @@ img {
     transition: border-color var(--hover-transition-time) ease-in-out;
 
     margin: .5rem, .1rem;
+
+    background: linear-gradient(
+        to right,
+        rgb(var(--purple)),
+        rgb(112, 80, 166),
+        rgb(79, 17, 92),
+        rgb(var(--purple))
+    );
+    background-size: 200%;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .HoverFocus > a:hover {
+    animation: BackgroundScrollAnim 3s linear infinite;
+
     border-color: rgb(var(--purple));
 }
 
@@ -187,5 +202,14 @@ section:hover {
 @media only screen and (orientation: portrait) {
     #HeaderDiv {
         justify-content: center;
+    }
+}
+
+@keyframes BackgroundScrollAnim {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: -200% center;
     }
 }
