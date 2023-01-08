@@ -73,6 +73,8 @@
     z-index: 99;
 
     transform: translate(.5rem, 1rem);
+
+    margin: 20px;
 }
 
 #NavMenuOpen:hover {
