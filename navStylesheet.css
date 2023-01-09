@@ -68,7 +68,7 @@
 
     color: rgb(var(--purple));
 
-    transition: transform 300ms ease-out, color 250ms ease-in;
+    transition: color 250ms ease-in, scale 300ms ease-out, transform 300ms ease-out;
 
     z-index: 99;
 
@@ -78,11 +78,17 @@
 }
 
 #NavMenuOpen:hover {
-    transform: scale(1.1);
+    transform: translate(.5rem, .85rem);
+
+    scale: 120%;
 
     color: rgb(255, 100, 20);
 
     z-index: 99;
+}
 
-    transform: translate(.5rem, 1rem);
+#NavMenuOpen:active {
+    transition: scale 100ms ease-out;
+
+    scale: 100%;
 }
