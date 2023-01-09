@@ -82,12 +82,14 @@
 
     scale: 120%;
 
-    color: rgb(255, 100, 20);
+    color: rgb(190, 101, 190);
 
     z-index: 99;
 }
 
 #NavMenuOpen:active {
+    transform: translate(.5rem, .85rem);
+
     transition: scale 100ms ease-out;
 
     scale: 100%;
