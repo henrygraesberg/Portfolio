@@ -202,8 +202,10 @@ section:hover {
     list-style-type: none;
 }
 
-@media only screen and (orientation: portrait) {
+@media only screen and (max-width: 95rem) {
     #HeaderDiv {
+        flex-direction: column;
+
         justify-content: center;
     }
 }
