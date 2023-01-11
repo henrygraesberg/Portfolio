@@ -94,3 +94,26 @@
 
     scale: 100%;
 }
+
+@media only screen and (max-width: 50rem) {
+    .Content {
+        width: 100vw;
+        max-width: none;
+
+        height: 20vh;
+
+        transform: translate(0, var(--menuLeft));
+
+        flex-direction: row;
+
+        align-items: center;
+    }
+
+    #OutsideLinks {
+        height: 100%;
+
+        flex-direction: column;
+
+        justify-content: space-around;
+    }
+}
