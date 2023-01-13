@@ -65,7 +65,7 @@ h1, h2, h3 {
     font-style: normal;
 }
 
-.smaller {
+#Interests > h1 {
     font-size: 3rem;
 }
 
