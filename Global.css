@@ -128,12 +128,12 @@ header {
 
 header > div {
     width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #HeaderDiv {
-    display: flex;
-    flex-wrap: wrap;
-
     align-items: center;
     justify-content: space-between;
 
@@ -152,13 +152,6 @@ header:has(.HoverFocus:hover) img {
     opacity: 0.2;
 }
 
-#Skills {
-    display: flex;
-    justify-content: space-evenly;
-
-    flex-wrap: wrap;
-}
-
 #Links {
     width: 100%;
 
@@ -166,6 +159,10 @@ header:has(.HoverFocus:hover) img {
     justify-content: center;
 
     flex-wrap: wrap;
+}
+
+#Interests {
+    justify-content: center;
 }
   
 section {
