@@ -1,7 +1,7 @@
 :root {
-    --dark-bg: rgba(15, 15, 15, 0.95);
-    --grey-bg: rgb(40, 40, 45);
-    --purple: 136, 48, 164;
+    --dark-bg: hsla(0, 0%, 6%, 0.949);
+    --grey-bg: hsl(0, 6%, 17%);
+    --purple: 286 55% 42%;
     --spacing: 55px;
     --hover-transition-time: 500ms;
   
@@ -57,7 +57,7 @@ h1 {
 }
 
 section > h2 {
-    border-bottom: .3rem solid rgba(var(--purple), 0.7);
+    border-bottom: .3rem solid hsla(var(--purple) / 0.7);
 }
 
 h1, h2, h3 {    
@@ -89,10 +89,10 @@ img {
 
     background: linear-gradient(
         to right,
-        rgb(var(--purple)),
-        rgb(112, 80, 166),
-        rgb(190, 101, 190),
-        rgb(var(--purple))
+        hsl(var(--purple)),
+        hsl(262, 35%, 48%),
+        hsl(300, 41%, 57%),
+        hsl(var(--purple))
     );
     background-size: 200%;
 
@@ -107,7 +107,7 @@ img {
 .HoverFocus > a:hover {
     animation-play-state: running;
 
-    border-color: rgb(var(--purple));
+    border-color: hsl(var(--purple));
 }
 
 header {
