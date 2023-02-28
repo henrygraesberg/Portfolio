@@ -163,6 +163,8 @@ header:has(.HoverFocus:hover) img {
 
 #Interests {
     justify-content: center;
+    
+    gap: 2ch;
 }
   
 section {
