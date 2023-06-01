@@ -197,8 +197,10 @@ section:hover {
     grid-column: span 13;
 }
 
-.Experience > li {
-    list-style-type: none;
+.Experience {
+    > li {
+        list-style-type: none;
+    }
 }
 
 @media only screen and (max-width: 95rem) {
