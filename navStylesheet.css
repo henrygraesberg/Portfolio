@@ -7,7 +7,7 @@ footer {
     padding: 1rem;
 }
 
-footer > p > a, footer > p > a:link, footer > p > a:visited {
+p > a, p > a:link, p > a:visited {
     color: rgb(178, 57, 178);
 }
 
