@@ -2,6 +2,15 @@
     --dark-bg-no-a: rgba(12, 12, 12);
 }
 
+footer {
+    color: rgb(100, 60, 255);
+    padding: 1rem;
+}
+
+footer > p > a, footer > p > a:link, footer > p > a:visited {
+    color: rgb(178, 57, 178);
+}
+
 .Content {
     position: fixed;
     background-color: var(--dark-bg-no-a);
