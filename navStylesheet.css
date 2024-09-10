@@ -2,15 +2,6 @@
     --dark-bg-no-a: rgba(12, 12, 12);
 }
 
-footer > p{
-    color: rgb(100, 60, 255);
-    padding: 1rem;
-}
-
-footer > p > a, footer p > a:link, footer > p > a:visited {
-    color: rgb(178, 57, 178);
-}
-
 .Content {
     position: fixed;
     background-color: var(--dark-bg-no-a);
@@ -70,6 +61,15 @@ footer > p > a, footer p > a:link, footer > p > a:visited {
 #OutsideLinks {
     display: flex;
     flex-direction: row;
+}
+
+#Footer > p {
+    color: rgb(100, 60, 255);
+    padding: 1rem;
+}
+
+#Footer > p > a, #Footer p > a:link, #Footer > p > a:visited {
+    color: rgb(178, 57, 178);
 }
 
 #NavMenuOpen {
