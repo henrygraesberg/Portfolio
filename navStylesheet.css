@@ -2,12 +2,12 @@
     --dark-bg-no-a: rgba(12, 12, 12);
 }
 
-footer {
+footer > p{
     color: rgb(100, 60, 255);
     padding: 1rem;
 }
 
-p > a, p > a:link, p > a:visited {
+footer > p > a, footer p > a:link, footer > p > a:visited {
     color: rgb(178, 57, 178);
 }
 
