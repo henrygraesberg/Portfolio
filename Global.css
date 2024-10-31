@@ -203,6 +203,21 @@ section:hover {
     }
 }
 
+.deprecated-warn {
+    background-color: orange;
+    padding: 1rem;
+
+    width: 100vw;
+    position: fixed;
+
+    display: flex;
+    justify-content: center;
+
+    > a {
+        color: black;
+    }
+}
+
 @media only screen and (max-width: 95rem) {
     #HeaderDiv {
         flex-direction: column;
